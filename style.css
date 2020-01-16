@@ -1,0 +1,115 @@
+      body {
+        padding: 30px;
+        font-family: didot;
+      }
+      .player-container {
+        position: relative;
+      }
+      .title {
+        margin-left: 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .timeline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        cursor: pointer;
+        height: 105%;
+        background-color: black;
+      }
+      .sections {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        font-size: 12;
+      }
+      .subsections {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        font-size: 12;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        margin: 2px;
+      }
+      .box {
+        background-color: #fa8073;
+        margin: 2px;
+        display: flex;
+      }
+      .subbox {
+        background-color: #fa8073;
+        margin: 0px;
+        display: flex;
+        border-style: dotted;
+        border-width: 0px 1px 0px 0px;
+        border-color: black;
+      }
+      .section-name {
+        font-size: 23px;
+        text-align: center;
+      }
+      .last {
+        border-width: 0px;
+      }
+      .box:hover {
+        background-color: red;
+      }
+      .subbox:hover {
+        background-color: red;
+      }
+      .box > a {
+        flex: 1;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        width: 100%;
+        display: block;
+        line-height: 60px;
+      }
+      .subbox > a {
+        flex: 1;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        width: 100%;
+        display: block;
+        line-height: 60px;
+      }
+      .controls {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .button {
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .time {
+        display: flex;
+        flex-direction: row;
+      }
+      .measure {
+        position: absolute;
+        font-size: 12;
+      }
+     .labels {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 7px;
+      }
+      .label {
+        position: absolute;
+        font-size: 12;
+      }
+     
