@@ -22,8 +22,8 @@ function createPlayer(data) {
   var duration = music.duration;
 
   setSectionWidths();
-  addSectionTitles();
   addBarStartLabels();
+  addSectionTitles();
   addBoxes();
   addBarLabels();
   addCadences();

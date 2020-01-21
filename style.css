@@ -33,7 +33,7 @@
         border-style: solid;
         border-width: 1px;
         border-color: black;
-        margin: 2px;
+        margin-right: 4px;
       }
       .box {
         background-color: #fa8073;
@@ -41,16 +41,21 @@
         display: flex;
       }
       .subbox {
-        background-color: #fa8073;
+        background-color: black;
         margin: 0px;
         display: flex;
-        border-style: dotted;
+        border-style: solid;
         border-width: 0px 1px 0px 0px;
-        border-color: black;
+        border-color: white;
       }
       .section-name {
         font-size: 23px;
         text-align: center;
+        border-style: solid;
+        border-width: 1px 1px 0px 1px;
+        border-color: black;        
+        margin-right: 4px;
+        background-color: #fa8073;
       }
       .last {
         border-width: 0px;
@@ -59,7 +64,7 @@
         background-color: red;
       }
       .subbox:hover {
-        background-color: red;
+        background-color: white;
       }
       .box > a {
         flex: 1;
@@ -67,22 +72,24 @@
         font-weight: bold;
         text-decoration: none;
         color: black;
-        font-size: 30px;
+        font-size: 20px;
         width: 100%;
         display: block;
-        line-height: 60px;
       }
       .subbox > a {
         flex: 1;
         text-align: center;
         font-weight: bold;
         text-decoration: none;
-        color: black;
-        font-size: 30px;
+        color: white;
+        font-size: 20px;
         width: 100%;
         display: block;
-        line-height: 60px;
       }
+      .subbox:hover > a {
+        color: black;
+      }
+
       .controls {
         display: flex;
         flex-direction: row;
