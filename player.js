@@ -122,8 +122,11 @@ function createPlayer(data) {
       var a = document.createElement('a');
       a.href = subsection.link;
       a.innerHTML = subsection.name;
-      element.style.width = 100 * (subsection.bar_end - subsection.bar_start + 1) / (section.bar_end - section.bar_start + 1) + "%"
-      console.log(100 * (subsection.bar_end - subsection.bar_start) / (section.bar_end - section.bar_start))
+      if ((typeof subsection.time_start !== 'undefined') && (typeof subsection.time_end !== 'undefined')) {
+        element.style.width = 100 * (subsection.time_end - subsection.time_start) / (section.time_end - section.time_start) + "%"
+      } else {
+        element.style.width = 100 * (subsection.bar_end - subsection.bar_start + 1) / (section.bar_end - section.bar_start + 1) + "%"
+      }
       element.appendChild(a);
       boxes.append(element);
     }
